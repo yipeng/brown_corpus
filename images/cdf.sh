@@ -13,8 +13,8 @@ set terminal pngcairo
 set output "cdf.png"
 
 sum = 0
-s(x) = ((sum=sum+x), x)
-plot "../word_freq.csv" u ($1):(s($1))
+s(y) = ((sum=sum+y), y)
+plot "../word_freq.csv" u ($0):(s($3))
 
 a=0
 cummulative_sum(x)=(a=a+x,a)
