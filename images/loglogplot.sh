@@ -10,6 +10,7 @@ set datafile separator ","
 set terminal postscript eps color
 set output "loglogplot.eps"
 plot "../word_freq.csv" using 0:3
+set output
 
 set terminal pngcairo
 set output "loglogplot.png"
