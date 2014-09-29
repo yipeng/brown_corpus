@@ -11,6 +11,11 @@ set datafile separator ","
 
 set terminal pngcairo
 set output "cdf.png"
+
+sum = 0
+s(x) = ((sum=sum+x), x)
+plot "../word_freq.csv" u ($1):(s($1))
+
 a=0
 cummulative_sum(x)=(a=a+x,a)
-plot "../word_freq.csv" using 0:(cummulative_sum($3)) title "Words" with linespoints
+plot "../word_freq.csv" using 0:((cummulative_sum($3))/sum) title "Words" with linespoints
