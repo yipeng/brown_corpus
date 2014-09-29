@@ -17,4 +17,4 @@ words_vals = list(words.values())
 
 f = open("brown_word_freq.csv", "w")
 for idx,i in enumerate(words_keys):
-	f.write('"'+str(i)+'",'+str(words_vals[idx])+'\n')
+	f.write(str(idx+1)+','+'"'+str(i)+'",'+str(words_vals[idx])+'\n')
