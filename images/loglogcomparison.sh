@@ -3,7 +3,7 @@ set logscale x
 set logscale y
 set xlabel "Rank"
 set ylabel "Frequency"
-set title "Frequency/Rank plot of Brown Corpus"
+set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
 
 set terminal pngcairo
