@@ -13,4 +13,4 @@ set terminal pngcairo
 set output "cdf.png"
 a=0
 cummulative_sum(x)=(a=a+x,a)
-plot "../word_freq.csv" using 0:(cummulative_sum($3)) title "Words"
+plot "../word_freq.csv" using 0:(cummulative_sum($3)) title "Words" with lines
