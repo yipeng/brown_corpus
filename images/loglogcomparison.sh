@@ -1,7 +1,7 @@
 #!/usr/bin/gnuplot
 set macros
-png="set terminal png size 1800,1800 crop enhanced font \"/usr/share/fonts/truetype/times.ttf,30\" dashlength 2; set termoption linewidth 3"
-eps="set terminal postscript fontfile \"/usr/share/fonts/truetype/times.ttf\"; set termoption linewidth 3;
+png="set terminal png size 1800,1800 crop enhanced dashlength 2; set termoption linewidth 9"
+eps="set terminal postscript; set termoption linewidth 3;
 
 set style line 1 linecolor rgb '#de181f' linetype 1  # Red
 set style line 2 linecolor rgb '#0060ae' linetype 1  # Blue
@@ -24,4 +24,4 @@ plot "../word_freq.csv" using 0:3 title "Words", 69971/x title "Zipf"
 
 set terminal png
 set output "loglogcomparison.png"
-plot "../word_freq.csv" using 0:3 title "Words", 69971/x title "Zipf"
+plot "../word_freq.csv" using 0:3 title "Words", 69971/x ls 2 title "Zipf"
