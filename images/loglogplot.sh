@@ -14,3 +14,4 @@ plot "../word_freq.csv" using 0:3
 set terminal pngcairo
 set output "loglogplot.png"
 plot "../word_freq.csv" using 0:3
+set output
