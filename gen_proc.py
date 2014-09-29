@@ -6,7 +6,7 @@ from nltk.probability import *
 
 words = FreqDist()
 
-pattern	= re.compile('.*[^a-z].*')
+pattern	= re.compile('.*[^a-zA-Z].*')
 for sentence in brown.sents():
     for word in sentence:
 		if not pattern.match(word):
