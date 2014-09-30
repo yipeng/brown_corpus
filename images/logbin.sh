@@ -11,7 +11,9 @@ set terminal pngcairo
 set output "logbinned.png"
 binwidth=5
 bin(x,width)=width*floor(x/width) + binwidth/2.0
-plot '../word_freq.csv' using (bin($0, binwidth)):($3) smooth freq with labels points
+
+flabel(y)=sprintf("y=%.2f", y)
+plot '../word_freq.csv' using (bin($0, binwidth)):($3):(flabel($0)) w labels smooth freq
 #, 69971/x title "Zipf"
 
 set output
