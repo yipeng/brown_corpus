@@ -5,7 +5,7 @@ set xlabel "Rank"
 set ylabel "Frequency"
 set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
-
+set xrange[0.1:100000]
 
 set terminal postscript eps color
 set output "loglogplot.eps"

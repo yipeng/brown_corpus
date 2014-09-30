@@ -1,19 +1,18 @@
 #!/usr/bin/gnuplot
+set logscale x
+set logscale y
 set xlabel "Rank"
 set ylabel "Frequency"
-set title "CDF of Brown Corpus"
-set style line 1 linewidth 3
-set style line 2 linewidth 3
-
+set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
+set xrange[0.1:100000]
 
-sum = 0
-s(x) = ((sum=sum+x), sum)
-plot "../word_freq.csv" u ($1):(s($3))
+set terminal postscript eps color
+set output "logcdf.eps"
+plot "../word_freq.csv" using 0:3, 69971/x title "Zipf"
+set output 
 
 set terminal pngcairo
-set output "cdf.png"
-a=0
-cummulative_sum(x)=(a=a+x,a)
-plot "../word_freq.csv" using 0:(cummulative_sum($3)/sum) title "Words" with linespoints
+set output "logcdf.png"
+plot "../word_freq.csv" using 0:3 cumul title "Words"
 set output
