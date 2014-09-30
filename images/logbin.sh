@@ -11,6 +11,6 @@ set terminal pngcairo
 set output "logbinned.png"
 binwidth=5
 bin(x,width)=width*floor(x/width) + binwidth/2.0
-plot '../word_freq.csv' using (bin($0, binwidth)):($3) smooth freq with boxes
+plot '../word_freq.csv' using (bin($0, binwidth)):($3) smooth freq
 
 set output
