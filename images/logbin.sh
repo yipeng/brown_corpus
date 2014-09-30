@@ -13,5 +13,5 @@ binwidth=5
 bin(x,width)=width*floor(x/width) + binwidth/2.0
 
 flabel(y)=sprintf("y=%.2f", y)
-plot '../word_freq.csv' using (bin($0, binwidth)):($3):(flabel($3)) with labels point offset character 0,character 1 tc rgb "blue" smooth freq, ($3)/x title "Zipf"
+plot '../word_freq.csv' using (bin($0, binwidth)):($3):(flabel($3)) with labels point offset character 0,character 1 tc rgb "blue", ($3)/x title "Zipf" smooth freq
 set output
