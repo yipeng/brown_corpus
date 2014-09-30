@@ -13,6 +13,6 @@ binwidth=5
 bin(x,width)=width*floor(x/width) + binwidth/2.0
 
 #flabel(y)=sprintf("y=%.2f", y)
-plot '../word_freq.csv' using (bin($0, binwidth)):($3) smooth freq, ($3)/x title "Zipf"
+plot '../word_freq.csv' using (bin($0, binwidth)):($3):($3) smooth freq with points, 100000000000000000000/x title "Zipf"
 #:(flabel($3)) smooth freq, 69971/x title "Zipf"
 set output
