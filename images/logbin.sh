@@ -9,7 +9,8 @@ set datafile separator ","
 
 set terminal pngcairo
 set output "logbinned.png"
-binwidth=2
+binwidth=0.35020056481
+#2*6*40234^(-1/3)
 bin(x,width)=width*floor(x/width) + binwidth/2.0
 
 #flabel(y)=sprintf("y=%.2f", y)
