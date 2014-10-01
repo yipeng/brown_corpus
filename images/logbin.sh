@@ -1,5 +1,5 @@
 #!/usr/bin/gnuplot
-set logscale x
+#set logscale x
 set logscale y
 set xlabel "Binned Rank (0.35)"
 set ylabel "Frequency"
