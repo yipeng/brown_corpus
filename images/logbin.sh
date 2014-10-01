@@ -4,7 +4,7 @@
 set logscale y
 set xlabel "Binned Rank (0.35)"
 set ylabel "Frequency"
-set title "Frequency/Rank plot of Brown Corpus words"
+set title "Frequency/Rank of Brown Corpus words"
 
 set datafile separator ","
 set autoscale x
