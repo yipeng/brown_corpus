@@ -10,9 +10,13 @@ I started this repo because I was curious to see how well the data fit. You can 
 1) Log-log plotting:
 ![log-log frequency rank graph](https://raw.githubusercontent.com/yipeng/brown_corpus/master/images/loglogcomparison.png)
 
-2) Logarithmic Binning (a bit of overkill because there is little scatter above)
+2) Logarithmic Binning:
 ![log binned frequency rank graph](https://raw.githubusercontent.com/yipeng/brown_corpus/master/images/logbinned.png)
+This method is a bit of an overkill because there is little scatter in the tail. The graph in log-log would have looked like the one above so I made the x-axis linear to illustrate the binning -- the width of which was calculated with [Freedman-Diaconis rule](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule).
 
+3) Cumulative Density Function (TBC)
+
+Thanks for reading. Have fun! 
 
 Note to self: The zip file is generated as follows:
 `7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on word_freq.7z word_freq.csv`
