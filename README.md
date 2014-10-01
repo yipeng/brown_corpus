@@ -5,7 +5,7 @@ These are intermediate files that should provide different starting point for ob
 * If you want to start from scratch, get `gen_word_freq.py`.
 * If you want the rank-freq counts, get `word_freq.csv/.7z`.
 
-I started this repo because I was curious to see how well the data fit. You can see common methods of verification in my results below.
+I started this repo because I wanted to verify power laws in data for myself after reading [Newman](http://arxiv.org/abs/cond-mat/0412004). You can see common methods of verification in my results below.
 
 1) Log-log plotting:
 ![log-log frequency rank graph](https://raw.githubusercontent.com/yipeng/brown_corpus/master/images/loglogcomparison.png)
