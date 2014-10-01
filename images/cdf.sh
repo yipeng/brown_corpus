@@ -1,8 +1,8 @@
 #!/usr/bin/gnuplot
-set logscale x
-set logscale y
+#set logscale x
+#set logscale y
 set xlabel "Rank"
-set ylabel "Frequency"
+set ylabel "Cumulative Frequency"
 set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
 set xrange[0.1:100000]
