@@ -16,6 +16,8 @@ I started this repo because I wanted to verify power laws in data for myself aft
 This method is a bit of an overkill because there is little scatter in the tail. Consequently, the graph would have looked like the one above so instead I made the x-axis linear to illustrate the binning process -- the width of which was calculated using [Freedman-Diaconis rule](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule).
 
 3) Cumulative Density Function (TBC)
+![](https://raw.githubusercontent.com/yipeng/brown_corpus/master/images/logcdf.png)
+
 
 Thanks for reading. Have fun! 
 
