@@ -5,7 +5,7 @@ set xlabel "Rank"
 set ylabel "Cumulative Frequency"
 set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
-set xrange[0.1:100000]
+set xrange[0.1:50000]
 set yrange[0.1:1000000]
 
 binwidth=0.35020056481
