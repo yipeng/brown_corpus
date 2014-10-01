@@ -13,9 +13,10 @@ set yrange [0.1:*]
 
 set terminal pngcairo
 set output "logbinned.png"
-binwidth=0.35020056481
+#binwidth=0.35020056481
+binwidth=2
 #2*6*40234^(-1/3)
-bin(x,width)=floor(x/width)
+bin(x,width)=width*floor(x/width)
 
 #flabel(y)=sprintf("y=%.2f", y)
 #sum = 0
