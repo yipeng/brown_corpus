@@ -11,7 +11,8 @@ set yrange[0.1:1000000]
 set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
 set pointintervalbox 3
 
-binwidth=0.35020056481
+#2*4*40234^(-1/3)=0.2334670432
+binwidth=0.2334670432
 bin(x,width)=width*floor(x/width) + binwidth/2.0
 
 
