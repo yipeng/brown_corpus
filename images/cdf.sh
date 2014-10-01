@@ -14,5 +14,5 @@ bin(x,width)=width*floor(x/width) + binwidth/2.0
 
 set terminal pngcairo
 set output "logcdf.png"
-plot '../word_freq.csv' using (bin($0, binwidth)):($3) smooth cumul title "Words", 69971/x title "Zipf"
+plot '../word_freq.csv' using 0:3 title "Zipf" smooth cumul
 set output
