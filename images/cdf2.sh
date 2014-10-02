@@ -1,16 +1,17 @@
 #!/usr/bin/gnuplot
-set logscale xy
+set logscale x
+set logscale y
 set xlabel "Rank"
-set ylabel "Frequency"
-set title "CDF of Brown Corpus"
-set style line 1 linewidth 3
-set style line 2 linewidth 3
-
+set ylabel "Cumulative Frequency"
+set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
+set xrange[0.1:50000]
+set yrange[0.1:1000000]
+
+set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
+set pointintervalbox 3
 
 set terminal pngcairo
-set output "cdf2.png"
-a=0
-cummulative_sum(x)=(a=a+x,a)
-plot "../word_freq.csv" using 0:(cummulative_sum($3)) title "Words" with linespoints
+set output "logcdf22.png"
+plot '../word_freq.csv' using 0:3 title "Words" with linespoints ls 1 smooth cumul, '' u ($0):(69971/($0)) title "Zipf" smooth cumul
 set output
