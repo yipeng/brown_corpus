@@ -13,5 +13,5 @@ set pointintervalbox 3
 
 set terminal pngcairo
 set output "logcdf_zipf.png"
-plot '../zipf_vals.csv' using 0:3 title "Zipf" with linespoints ls 1 smooth cumul
+plot '../word_freq.csv' using 0:4 title "Words" with linespoints ls 1 smooth cumul, '../zipf_vals.csv' using 0:3 title "Zipf" with linespoints ls 1 smooth cumul
 set output
