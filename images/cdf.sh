@@ -2,7 +2,7 @@
 #set logscale x
 #set logscale y
 set xlabel "Rank"
-set ylabel "Cumulative Frequency"
+set ylabel "Cumulative Frequency Counts"
 set title "Frequency/Rank of Brown Corpus"
 set datafile separator ","
 set xrange[0.1:50000]
