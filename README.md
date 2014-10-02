@@ -21,9 +21,12 @@ This method is a bit of an overkill because there is little scatter in the tail.
 ![](https://raw.githubusercontent.com/yipeng/brown_corpus/master/images/logcdf.png)
 
 
-Notice that the CDFs are rather different. Had started with this you might not agree that brown follows zipf at all. I suppose this is what they mean by 'empirical power laws' being approximation. 
- 
+Notice that the CDFs are rather different. Had started with this you might not agree that brown follows zipf at all. I suppose this is what they mean by 'empirical power laws' being approximation. We can test whether they are really similar or different with [Kolmogorov-Smirnov test](https://en.wikipedia.org/wiki/Kolmogorov-Smirnov_test). We can observe visually that the D value is ~0.1, and the critical vuale is sqrt((981716+782254)/(981716*782254))*1.36 or ~0.02, hence we reject the null hypothesis that the two are from the same underlying probablity distribution. 
+
 Thanks for reading. Have fun! 
 
-Note to self: The zip file is generated as follows:
+Notes to self: 
+
+* I have used the 2 sample ks test because it is easier to follow on wikipedia. The 1 sample ks goodness of fit test would give the same result. 
+* The zip file is generated as follows:
 `7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on word_freq.7z word_freq.csv`
