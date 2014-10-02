@@ -17,7 +17,7 @@ This method is a bit of an overkill because there is little scatter in the tail.
 
 3) Cumulative Density Function
 ![](https://raw.githubusercontent.com/yipeng/brown_corpus/master/images/logcdf.png)
-
+(Note to self: change to probablity) 
 Notice that the CDFs are rather different. Had started with this you might not agree that brown follows zipf at all. I suppose this is what they mean by 'empirical power laws' being approximation. 
  
 Thanks for reading. Have fun! 
