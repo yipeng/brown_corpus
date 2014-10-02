@@ -33,7 +33,7 @@ def gen_zipf():
 		tokens = ct.split(',')
 		if (idx == 0):
 			base = tokens[2]
-		x.write(tokens[0]+','+ str(float(base)/float(tokens[0]))+'\n')
+		x.write(tokens[0]+','+ str(float(base)/float(tokens[0]))+','+str(float(base)/float(tokens[0])/782254)+'\n')
 	x.close()
 	f.close()
 
