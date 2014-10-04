@@ -7,8 +7,8 @@ set title "Log Rank vs. Log Frequency for the Entire (Brown) Corpus"
 set datafile separator ","
 set xrange[1:100000]
 set yrange[1:100000]
-set format x "%.0s*10^%T"
-set format y "%.0s*10^%T"
+set format x "10^%T"
+set format y "10^%T"
 
 set terminal postscript eps color
 set output "loglogplot.eps"
