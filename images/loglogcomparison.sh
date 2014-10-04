@@ -3,10 +3,10 @@ set logscale x
 set logscale y
 set xlabel "Rank"
 set ylabel "Frequency"
-set title "Frequency/Rank of Brown Corpus"
+set title "Log Rank vs. Log Frequency for the Entire (Brown) Corpus"
 set datafile separator ","
-set xrange[0.1:*]
-set yrange[0.1:*]
+set xrange[1:100000]
+set yrange[1:100000]
 
 set terminal postscript eps color
 set output "loglogplot.eps"
