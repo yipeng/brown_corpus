@@ -1,16 +1,16 @@
 #!/usr/bin/gnuplot
 
 #set logscale x
-set logscale y
+#set logscale y
 set xlabel "Binned Rank (0.35)"
 set ylabel "Frequency"
-set title "Frequency/Rank of Brown Corpus words"
+set title "Binned Rank vs. Frequency for the Entire (Brown) Corpus"
 
 set datafile separator ","
 set autoscale x
 #set autoscale y
 #set xrange [0.1:*]
-set yrange [0.1:*]
+#set yrange [0.1:*]
 
 set terminal pngcairo
 set output "logbinned.png"
