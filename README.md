@@ -23,6 +23,10 @@ This method is a bit of an overkill because there is little scatter in the tail.
 
 Notice that the CDFs are rather different. Had started with this you might not agree that brown follows zipf at all. I suppose this is what they mean by 'empirical power laws' being approximation. We can test whether they are really similar or different with [Kolmogorov-Smirnov test](https://en.wikipedia.org/wiki/Kolmogorov-Smirnov_test). We can observe visually that the D value is ~0.1, and the critical value is ~0.002 (sqrt((981716+782254)/(981716*782254))*1.36), ~0.1 >> ~0.002 hence we reject the null hypothesis that the two are from the same underlying probablity distribution. 
 
+This is an interesting result because for 50 years people have been making the claim that word frequency obeys Zipf's law on the basis that Brown Corpus obeys Zipf's law. This is not entirely true. Brown's Corpus is Zipfian only over its middle values -- ignoring both tails. 
+
+Probably no one remembers a prophetic little comment by Twaddell, in the Forward of 'Computational Analysis of Present-Day American English' where the result was originally published, in which he warns that "the tables and graphs dealing with fits to a "Zipf's constant" line show a suggestively narrow range of variation with hints of dependence on sample size. It wold be equally injudicious to be awed by the display or to dimiss it as unimportant."
+
 Thanks for reading. Have fun! 
 
 Notes to self: 
