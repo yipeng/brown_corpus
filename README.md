@@ -1,6 +1,6 @@
 # Files transformed from Brown Corpus
 
-These are intermediate files that should provide different starting point for observing the rank-frequency relationship or [Zipf's Law](https://en.wikipedia.org/wiki/Zipf's_law) in *Brown University Standard Corpus of Present-Day American English*.
+These are intermediate files that should provide different starting point for observing the rank-frequency relationship or [Zipf's Law](https://en.wikipedia.org/wiki/Zipf's_law) in *Brown University Standard Corpus of Present-Day American English*. This relationship was first observed by Henry Kucera and W. Nelson Francis in the [Computational Analysis of Present-Day American English](https://openlibrary.org/books/OL5533737M/Computational_analysis_of_present-day_American_English).
  
 * If you want to start from scratch, get `gen_word_freq.py`.
 * If you want the rank-freq counts, get `word_freq.csv/.7z`.
