@@ -25,7 +25,7 @@ Notice that the CDFs are rather different. Had started with this you might not a
 
 This is an interesting result because for 50 years people have been making the claim that word frequency obeys Zipf's law on the basis that Brown Corpus obeys Zipf's law. This is not entirely true. Brown's Corpus is Zipfian only over its middle values -- ignoring both tails. 
 
-Probably no one remembers a prophetic little comment by Twaddell where he warns that "the tables and graphs dealing with fits to a "Zipf's constant" line show a suggestively narrow range of variation with hints of dependence on sample size. It would be equally injudicious to be awed by the display or to dimiss it as unimportant." -- *the Forward, Computational Analysis of Present-Day American English*, where the result was originally published.
+Probably no one remembers a prophetic little comment by Twaddell where he warns that "the tables and graphs dealing with fits to a "Zipf's constant" line show a suggestively narrow range of variation with hints of dependence on sample size. It would be equally injudicious to be awed by the display or to dimiss it as unimportant." -- *The Forward, Computational Analysis of Present-Day American English*, where the result was originally published.
 
 Thanks for reading. Have fun! 
 
